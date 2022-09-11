@@ -48,8 +48,8 @@ endif()
 include(${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake)
 
 # Set project settings
-set(PROJECT_NAME tcp-echo-server)    # TODO:Project Name
-project(${PROJECT_NAME})
+set(PROJECT_NAME tcp-echo-server)    # TODO:Project Name.
+project(${PROJECT_NAME} VERSION  0.0.1)	# TODO:Project Version.
 
 ## project function set PROJECT_SOURCE_DIR to CMakefile.txt directory, so update path
 set(PROJECT_SOURCE_DIR "${PROJECT_SOURCE_DIR}/src")

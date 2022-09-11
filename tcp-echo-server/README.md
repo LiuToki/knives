@@ -32,14 +32,39 @@ or
 ### Initialize
 ```
 $ git submodule init
+$ git submodule update
+```
+
+### Preparation
+- Linux
+```
+$ cd libs/vcpkg
+$ ./bootstrap-vcpkg.sh
+$ vcpkg install boost:x64-linux
+```
+
+- Windows
+```
+$ cd libs/vcpkg
+$ ./bootstrap-vcpkg.bat
+$ vcpkg install boost:x64-windows boost:x64-windows-static
 ```
 
 ### Build
+- Linux
 ```
 $ mkdir build
 $ cd build
 $ cmake -G Ninja ..
 $ ninja
+```
+
+- Windows
+```
+$ mkdir build
+$ cd build
+$ cmake -G "Visual Studio 17 2022" ..
+$ msbuild tcp-echo-server.sln -t:tcp-echo-server:Rebuild -p:Configuration=release -p:Platform=x64
 ```
 
 ## Features
