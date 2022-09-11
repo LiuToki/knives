@@ -42,7 +42,7 @@
             "label": "msbuild - Debug",
             "type": "shell",
             "command": "msbuild",
-            "args": ["cpp-vcpkg", "-t:cpp-vcpkg:Rebuild", "-p:Configuration=debug", "-p:Platform=x64"],
+            "args": ["tcp-echo-server", "-t:tcp-echo-server:Rebuild", "-p:Configuration=debug", "-p:Platform=x64"],
             "dependsOn": "CMake - Debug"
         }
     ]
