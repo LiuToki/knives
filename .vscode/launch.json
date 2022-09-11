@@ -9,7 +9,7 @@
 			"name": "C++ Launch(Linux)",
 			"type": "cppdbg",
 			"request": "launch",
-			"program": "${workspaceFolder}/build/cpp-vcpkg",
+			"program": "${workspaceFolder}/build/tcp-echo-server",
 			"args": [],
 			"stopAtEntry": false,
 			"cwd": "${workspaceFolder}/build",
@@ -31,13 +31,13 @@
 			"name": "C++ Launch (Windows)",
 			"type": "cppvsdbg",
 			"request": "launch",
-			"program": "${workspaceRoot}/build/Debug/cpp-vcpkg.exe",
+			"program": "${workspaceRoot}/build/Debug/tcp-echo-server.exe",
 			"args": [],
 			"stopAtEntry": false,
 			"cwd": "${workspaceFolder}/build",
 			"environment": [],
 			"externalConsole": false,
-			"preLaunchTask": "Ninja - Debug"
+			"preLaunchTask": "msbuild - Debug"
 		}
 	]
 }
